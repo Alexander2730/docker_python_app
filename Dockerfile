@@ -1,11 +1,7 @@
-# Используем официальный образ Python как базовый
-FROM python:3.9-slim
+FROM python:3.8-slim
 
-# Устанавливаем рабочую директорию
 WORKDIR /app
 
-# Копируем файл app.py в контейнер
 COPY app.py .
 
-# Команда по умолчанию для запуска скрипта
-CMD ["python", "app.py", "User"]
+ENTRYPOINT ["python", "app.py"]

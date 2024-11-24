@@ -1,0 +1,5 @@
+docker run --rm docker_python_app Alexander
+
+docker run --rm docker_python_app Bob
+
+docker run --rm docker_python_app John
